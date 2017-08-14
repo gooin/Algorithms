@@ -3,6 +3,7 @@
  */
 
 function sumPrimes(num) {
+    var start = new Date().getTime();
     var primes = 0;
     var arr =[];
     for(var i = 1; i<num; i++){
@@ -19,9 +20,11 @@ function sumPrimes(num) {
             primes +=i;
         }
     }
-
-    return arr;
+    var end = new Date().getTime();
+   // 输出运算时间
+    console.log(end - start);
+    return primes;
     //return primes;
 }
 
-console.log(sumPrimes(10));
+console.log(sumPrimes(1000000));
