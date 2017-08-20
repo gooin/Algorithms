@@ -10,8 +10,6 @@
  */
 
 function repeatStr(str, num) {
-
-
     if (num < 0) {
         return '';
     }
